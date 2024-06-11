@@ -1,6 +1,27 @@
-# LLM Dataset Inference: Detect Datasets, Not Strings
+# LLM Dataset Inference: Did you train on my dataset?
 
-This repository contains data from 22 different domains of the PILE, divided into train and val sets. The data is in the form of a JSON file, with each entry containing the raw text, as well as various kinds of perturbations applied to it. The dataset is used to facilitate privacy research in language models, where the perturbed data can be used as reference detect the presence of a particular dataset in the training data of a language model.
+The proliferation of large language models (LLMs) in the real world has come with a rise in copyright
+cases against companies for training their models on unlicensed data from the internet. Recent works
+have presented methods to identify if individual text sequences were members of the model’s training
+data, known as membership inference attacks (MIAs). We demonstrate that the apparent success of
+these MIAs is confounded by selecting non-members (text sequences not used for training) belonging to
+a different distribution from the members (e.g., temporally shifted recent Wikipedia articles compared
+with ones used to train the model). This distribution shift makes membership inference appear successful.
+However, most MIA methods perform no better than random guessing when discriminating between
+members and non-members from the same distribution (e.g., in this case, the same period of time).
+Even when MIAs work, we find that different MIAs succeed at inferring membership of samples from
+different distributions. Instead, we propose a new dataset inference method to accurately identify
+the datasets used to train large language models. This paradigm sits realistically in the modern-day
+copyright landscape, where authors claim that an LLM is trained over multiple documents (such as a
+book) written by them, rather than one particular paragraph. While dataset inference shares many
+of the challenges of membership inference, we solve it by selectively combining the MIAs that provide
+positive signal for a given distribution, and aggregating them to perform a statistical test on a given
+dataset. Our approach successfully distinguishes the train and test sets of different subsets of the Pile
+with statistically significant p-values < 0.1, without any false positives.
+
+## Data Used
+
+This repository contains data different subsets of the PILE, divided into train and val sets. The data is in the form of a JSON file, with each entry containing the raw text, as well as various kinds of perturbations applied to it. The dataset is used to facilitate privacy research in language models, where the perturbed data can be used as reference detect the presence of a particular dataset in the training data of a language model.
 
 ## Quick Links
 
