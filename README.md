@@ -1,7 +1,7 @@
 # LLM Dataset Inference: Did you train on my dataset?
 
 <!-- insert image from files/llm-dataset-inference-overview.pdf -->
-![LLM Dataset Inference Overview](files/llm-dataset-inference-overview.png)
+![LLM Dataset Inference Overview](files/llm-dataset-inference-overview.pdf)
 
 
 The proliferation of large language models (LLMs) in the real world has come with a rise in copyright
