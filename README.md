@@ -1,5 +1,9 @@
 # LLM Dataset Inference: Did you train on my dataset?
 
+<!-- insert image from files/llm-dataset-inference-overview.pdf -->
+![LLM Dataset Inference Overview](files/llm-dataset-inference-overview.png)
+
+
 The proliferation of large language models (LLMs) in the real world has come with a rise in copyright
 cases against companies for training their models on unlicensed data from the internet. Recent works
 have presented methods to identify if individual text sequences were members of the model’s training
