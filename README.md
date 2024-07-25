@@ -58,6 +58,9 @@ We use the NL-Augmenter library to apply the following perturbations to the data
 - `whitespace_perturbation`: Randomly adding or removing whitespace from the sentence.
 - `underscore_trick`: Adding underscores to the sentence.
 
+## Demo
+
+Run `Demo.ipynb` to conduct LLM Dataset Inference attacks on your own data and/or understand the code.
 
 ## Citing Our Work
 
