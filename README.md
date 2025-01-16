@@ -29,8 +29,7 @@ This repository contains data different subsets of the PILE, divided into train 
 
 ## Quick Links
 
-- [**arXiv Paper**](): Detailed information about the Dataset Inference V2 project, including the dataset, results, and additional resources.
-- [**GitHub Repository**](): Access the source code, evaluation scripts, and additional resources for Dataset Inference.
+- [**Paper (as appeared in NeurIPS 2024)**](https://openreview.net/pdf?id=Fr9d1UMc37): Detailed information about the Dataset Inference V2 project, including the dataset, results, and additional resources.
 - [**Dataset on Hugging Face**](https://huggingface.co/datasets/pratyushmaini/llm_dataset_inference): Direct link to download the various versons of the PILE dataset.
 - [**Summary on Twitter**](): A concise summary and key takeaways from the project.
 
